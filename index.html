@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Jalisco Fairway Links</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <style>
     body {
       font-family: "Arial Rounded MT Bold", "Arial Rounded", Arial, sans-serif;
@@ -28,13 +30,19 @@
     }
     .container {
       margin: 50px auto;
-      max-width: 1500px;
+      max-width: 90%;
       position: relative;
       z-index: 1;
     }
     img.logo { 
         max-width: 200px; margin-bottom: 20px; border-radius: 100px; 
         box-shadow: 0 0 200px rgba(255,255,255,1), 0 0 20px rgba(255,255,255,0.8);
+    }
+    @media (max-width: 600px) {
+        a.button {
+            font-size: 24px;
+            padding: 12px;
+        }
     }
     a.button {
       display: block;

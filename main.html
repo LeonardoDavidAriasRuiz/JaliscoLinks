@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jalisco Fairway Links</title>
+  <style>
+    body {
+      font-family: "Arial Rounded MT Bold", "Arial Rounded", Arial, sans-serif;
+      text-align: center;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+    h1 {
+      font-family: "Arial Rounded MT Bold", "Arial Rounded", Arial, sans-serif;
+      font-size: 48px;
+      margin-bottom: 30px;
+      text-shadow: 0 0 200px rgba(255,255,255,1), 0 0 20px rgba(255,255,255,0.8);
+      display: inline-block;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(255,255,255,0.2);
+      z-index: 0;
+      pointer-events: none;
+    }
+    .container {
+      margin: 50px auto;
+      max-width: 400px;
+      position: relative;
+      z-index: 1;
+    }
+    img.logo { 
+        max-width: 200px; margin-bottom: 20px; border-radius: 100px; 
+        box-shadow: 0 0 200px rgba(255,255,255,1), 0 0 20px rgba(255,255,255,0.8);
+    }
+    a.button {
+      display: block;
+      margin: 18px 0;
+      padding: 15px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background 0.3s;
+      position: relative;
+      text-align: left;
+      box-shadow: 0 0 50px rgba(255,255,255,1), 0 8px 16px rgba(0,0,0,0.3);
+      border: 2px solid rgba(255,255,255,0.8);
+      background-color: rgba(255,255,255,0.7); /* White base background with transparency */
+    }
+    /* Brand background colors and text colors with 30% opacity backgrounds */
+    a.button.menu      { background-image: linear-gradient(rgba(98,95,112,0.3), rgba(98,95,112,0.3)); color: #625f70; }
+    a.button.instagram { background-image: linear-gradient(rgba(225,48,108,0.3), rgba(225,48,108,0.3)); color: #E1306C; }
+    a.button.facebook  { background-image: linear-gradient(rgba(59,89,152,0.3), rgba(59,89,152,0.3)); color: #3b5998; }
+    a.button.website   { background-image: linear-gradient(rgba(44,62,80,0.3), rgba(44,62,80,0.3)); color: #2c3e50; }
+    a.button.doordash  { background-image: linear-gradient(rgba(255,48,8,0.3), rgba(255,48,8,0.3)); color: #FF3008; }
+    a.button.grubhub   { background-image: linear-gradient(rgba(239,135,51,0.3), rgba(239,135,51,0.3)); color: #EF8733; }
+    a.button.google    { background-image: linear-gradient(rgba(66,133,244,0.3), rgba(66,133,244,0.3)); color: #4285F4; }
+
+    a.button.menu:hover      { background-image: linear-gradient(rgba(98,95,112,0.6), rgba(98,95,112,0.6)); }
+    a.button.instagram:hover { background-image: linear-gradient(rgba(225,48,108,0.6), rgba(225,48,108,0.6)); }
+    a.button.facebook:hover  { background-image: linear-gradient(rgba(59,89,152,0.6), rgba(59,89,152,0.6)); }
+    a.button.website:hover   { background-image: linear-gradient(rgba(44,62,80,0.6), rgba(44,62,80,0.6)); }
+    a.button.doordash:hover  { background-image: linear-gradient(rgba(255,48,8,0.6), rgba(255,48,8,0.6)); }
+    a.button.grubhub:hover   { background-image: linear-gradient(rgba(239,135,51,0.6), rgba(239,135,51,0.6)); }
+    a.button.google:hover    { background-image: linear-gradient(rgba(66,133,244,0.6), rgba(66,133,244,0.6)); }
+
+    a.button img {
+      max-width: 30px;
+      height: auto;
+      vertical-align: middle;
+      margin-right: 10px;
+      margin-top: -3px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Jalisco Fairway Logo" class="logo"> <!-- pon tu logo aquí -->
+    <h1>Jalisco Fairway</h1>
+
+    <a class="button menu" href="menu.html">
+      <img src="logo.png" alt="Menu Icon">View Menu
+    </a>
+    <a class="button instagram" href="https://www.instagram.com/jalisco_fairway/" target="_blank">
+      <img src="instagram.png" alt="Instagram Icon">Instagram
+    </a>
+    <a class="button facebook" href="https://www.facebook.com/Jaliscofairway.official/" target="_blank">
+      <img src="facebook.png" alt="Facebook Icon">Facebook
+    </a>
+    <a class="button website" href="https://www.jaliscofairway.com" target="_blank">
+      <img src="logo.png" alt="Website Icon">Official Website
+    </a>
+    <a class="button doordash" href="https://www.doordash.com/store/jalisco-fairway-grill-roseville-93465/492029/?event_type=autocomplete&pickup=false" target="_blank">
+      <img src="doordash.png" alt="DoorDash Icon">Order on DoorDash
+    </a>
+    <a class="button grubhub" href="https://www.grubhub.com/restaurant/jalisco-fairway-9050-fairway-dr-roseville/2562709" target="_blank">
+      <img src="grubhub.png" alt="Grubhub Icon">Order on Grubhub
+    </a>
+    <a class="button google" href="https://www.google.com/maps/place/Jalisco+Fairway/@38.7844514,-121.2668191,16z/data=!3m1!4b1!4m6!3m5!1s0x809b21de16c061d5:0x81e94db88478ce97!8m2!3d38.7844514!4d-121.2668191!16s%2Fg%2F1tk8nvqp?hl=es-419&entry=ttu&g_ep=EgoyMDI1MDgxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+      <img src="google.png" alt="Google Icon">Google Reviews / Map
+    </a>
+  </div>
+</body>
+</html>

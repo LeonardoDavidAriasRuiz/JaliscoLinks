@@ -7,13 +7,32 @@
   <meta name="theme-color" content="#C08258">
   <meta name="apple-mobile-web-app-status-bar-style" content="#C08258">
   <style>
+    /* Esto es clave para iPhones con notch o isla dinámica */
+    html, body {
+      height: 100%;
+      background-attachment: fixed;
+    }
+    
+    /* Ignorar safe areas y cubrir completamente la pantalla */
+    @supports(padding: max(0px)) {
+      body {
+        padding-top: env(safe-area-inset-top);
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
+        padding-bottom: env(safe-area-inset-bottom);
+        background-clip: border-box;
+      }
+    }
     body {
+      padding: 0;
+      margin: 0;
       font-family: "Arial Rounded MT Bold", "Arial Rounded", Arial, sans-serif;
       text-align: center;
       background: url('background.jpg') no-repeat center center fixed;
       background-size: cover;
       position: relative;
-      margin: 0;
+      height: 100vh;
+      width: 100%;
     }
     h1 {
       font-family: "Arial Rounded MT Bold", "Arial Rounded", Arial, sans-serif;
